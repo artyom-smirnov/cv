@@ -1,0 +1,92 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+\moderncvtheme[blue]{classic}
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.8]{geometry}
+
+\usepackage[unicode]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+\firstname{Artyom}
+\familyname{Smirnov}
+\address{}{Murom, Russia}
+\mobile{+7(920)944-33-40}
+\email{artyom\_smirnov@icloud.com}
+\homepage{http://artyom-smirnov.info}
+
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+\begin{document}
+\maketitle
+
+\section{Brief description}
+\cvline{}{
+  My main direction - system development and DBMS.\newline{}
+  My primary programming language is C++.\newline{}
+  I enjoy OpenSource software and tools which I use both for work and fun.
+}
+
+\section{Projects}
+\subsection{C++}
+\cvline{Red Database}{
+  \url{http://www.red-soft.biz/en/reddatabase_product.html}\newline{}
+  Firebird DBMS fork with improved security
+}
+
+\cvline{SciDB}{
+  \url{https://www.scidb.org}\newline{}
+  DBMS for large-scale scientific experiments based on multi-dimensional arrays
+}
+
+\subsection{Python}
+\cvline{scidbpy}{
+  \url{https://github.com/artyom-smirnov/scidbpy}\newline{}
+  Pure python SciDB client library implementation
+}
+
+\section{Experience}
+\cventry
+  {Dec 2009 - Present}
+  {Software Engineer}
+  {SciDB}
+  {}{}
+  {Query parsing, translating and processing\newline{}
+   Client tools\newline{}
+   Client libraries and drivers\newline{}
+   JDBC driver\newline{}
+   Build system, packaging}
+\cventry
+  {May 2007 - Aug 2009}
+  {Software Engineer}
+  {Red Soft Corporation}
+  {}{}
+  {Security improvements in Red Database - fork of Firebird RDBMS}
+
+\section{Development skills}
+\subsection{Programming Languages}
+\cvline{Expert}{C, C++}
+\cvline{Intermediate}{Python, Java, Bash}
+\cvline{Basic}{LaTeX}
+\subsection{Tools}
+\cvline{}{gcc, bison, flex, cmake, git, svn, ant, maven}
+
+\section{Computer skills}
+\cvline{IDE}{Xcode, QtCreator, Eclipse}
+\cvline{OS}{Linux (RedHat, Debian), MacOS X}
+
+\section{Education}
+\cventry
+  {Sep 2004 -  Jul 2009}
+  {Information Technology}
+  {Murom Institute (branch) of the Vladimir State University, Murom, Russia}
+  {}{}
+  {Engineer}
+
+\section{Links}
+\cvline{LinkedIn}{\url{http://www.linkedin.com/in/artyomsmirnov}}
+\cvline{GitHub}{\url{https://github.com/artyom-smirnov}}
+
+\end{document}
