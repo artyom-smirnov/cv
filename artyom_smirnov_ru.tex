@@ -1,0 +1,148 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+\moderncvtheme[blue]{classic}
+\usepackage[utf8x]{inputenc}
+\usepackage[scale=0.8]{geometry}
+\usepackage[russian]{babel}
+
+\usepackage[unicode]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+\firstname{Артем}
+\familyname{Смирнов}
+\address{}{Муром, Россия}
+\mobile{+7(920)944-33-40}
+\email{artyom\_smirnov@icloud.com}
+\homepage{http://artyom-smirnov.info}
+
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+\renewcommand{\rmdefault}{cmr}
+\renewcommand{\sfdefault}{cmss}
+\renewcommand{\ttdefault}{cmtt}
+
+\begin{document}
+\maketitle
+
+\section{Интересы}
+\cvline{}{
+  Мое основное направление работы --- системное программирование: разработка системного ПО и СУБД.\newline{}
+  Основной язык, который я использую --- это C++.\newline{}
+  Я люблю открытое ПО и утилиты, которые я применяю и в профессии и в хобби.}
+  
+\section{Образование}
+\cventry
+  {Сентябрь 2004 - Июль 2009}
+  {Информационные системы}
+  {Муромский Институт (отделение) Владимирского Государственного Института, Муром, Россия}
+  {}{}
+  {Инженер}
+
+\section{Опыт работы}
+\cventry
+  {Декабрь 2009 - Сентябрь 2013}
+  {Разработчик}
+  {SciDB}
+  {}{}
+  {Парсинг, трансляция и обработка запросов\newline{}
+   Клиентские утилиты\newline{}
+   Клиентская библиотека\newline{}
+   Java/JDBC драйвер\newline{}
+   Система сборки и пакетирования}
+\cventry
+  {Май 2007 - Август 2009}
+  {Разработчик}
+  {Корпорация Ред Софт}
+  {}{}
+  {
+    Улучшения безопасности в Red Database - форке Firebird RDBMS\newline{}
+    Механизм контроля целостности метаданных в Red Database\newline{}
+    Портирование MTDORB с Kylix на Free Pascal\newline{}
+    Портирование и поддержка на Linux утилиты репликации данных Firebird/Red Database
+  }
+
+\section{Навыки разработки}
+\subsection{Языки программирования}
+\cvline{}{C++, C, Python, Bash, Java, LaTeX, Pascal}{}
+
+\subsection{Утилиты}
+\cvline{}{gcc, gdb, valgrind, gprof, oprofile, gcov, lcov, bison, flex, cmake, git, svn, ant, maven, qmtest}
+
+\section{Другие навыки}
+\cvcomputer{IDE}{Eclipse, QtCreator, Xcode}{}{}
+\cvcomputer{OS}{GNU Linux, OS X}{}{}
+
+\section{Проекты}
+\subsection{C++}
+\cvline{Red Database}{
+  \url{http://www.red-soft.biz/en/reddatabase_product.html}\newline{}
+  Форк Firebird DBMS с улучшенной безопасностью для сертификации ФСТЭК
+}
+
+\cvline{SciDB}{
+  \url{http://www.scidb.org}\newline{}
+  Распределенная база данных для научных экспериментов с моделью данных основанной на массивах
+}
+
+\subsection{Python}
+\cvline{scidb4py}{
+  \url{https://github.com/artyom-smirnov/scidb4py}\newline{}
+  Реализация драйвера для SciDB на чистом Python
+}
+
+\subsection{Pascal}
+\cvline{MTDORB}{
+  \url{http://sourceforge.net/projects/mtdorb/}\newline{}
+  Открытый ORB для Pascal
+}
+
+\section{Знание иностранных языков}
+\cvline{Английский язык}{Читаю, могу объясняться}
+
+\section{Публикации}
+
+\cvline{}{Контроль доступа к системному каталогу в СУБД <<Ред <<База Данных>>\newline{}
+Ж-л <<Информационная безопасность регионов>>, Саратов, 2009, Смирнов А.В., Симаков Р.А.}
+
+\cvline{}{Архитектура сетевого взаимодействия СУБД SciDB\newline{}
+Системы и методы обработки и анализа данных: Сборник статей молодых исследователей, Выпуск 1, 2009, Смирнов А.В.}
+
+\cvline{}{Обзор модели данных СУБД SciDB\newline{}
+Системы и методы обработки и анализа данных: Сборник статей молодых исследователей, Выпуск 1, 2009, Смирнов А.В.}
+
+\cvline{}{Особенности распределения данных в многомерной СУБД SciDB\newline{}
+Алгоритмы, методы и системы обработки данных: cборник научных статей, Выпуск 14, 2009, Смирнов А.В.}
+
+\cvline{}{Overview of SciDB: Large Scale Array Storage, Processing and Analysis\newline{}
+J. Rogers, R. Simakov, E. Soroush, P. Velikhov, M. Balazinska, D. DeWitt, B. Heath, D. Maier, S. Madden, J. Patel, M. Stonebraker, S. Zdonik, A. Smirnov, K. Knizhnik, Paul G. Brown SIGMOD 2010}
+
+\cvline{}{Разработка модели оптимизатора запросов\newline{}
+Алгоритмы, методы и системы обработки данных: cборник научных статей, Выпуск 15, 2010, Смирнов А.В., Пугин Е.В.}
+
+\cvline{}{Подготовка запросов к оптимизации и выполнению в СУБД SciDB\newline{}
+Всероссийские научные <<Зворыкинские чтения – 2010>>, г. Муром., 2010, Смирнов А.В.}
+
+\cvline{}{Оптимизация многомерных распределенных запросов в СУБД SciDB\newline{}
+Всероссийские научные <<Зворыкинские чтения – 2010>>, г. Муром., 2010, Смирнов А.В.}
+
+\cvline{}{Распределенный подход к поиску в пространстве оптимизатора запросов\newline{}
+Алгоритмы, методы и системы обработки данных: cборник научных статей, Выпуск 18, 2011, Смирнов А.В.}
+
+\cvline{}{Проблема оптимизации запросов в расширяемой СУДБ SciDB\newline{}
+Алгоритмы, методы и системы обработки данных: cборник научных статей; Выпуск 18, 2011, Смирнов А.В.}
+
+\cvline{}{Динамически расширяемый оптимизатор запросов\newline{}
+Международная конференция <<Проблемы информатики и моделирования (ПИМ-2011)>>, 2011, Смирнов А.В., Пугин Е.В.}
+
+\cvline{}{Целеориентированный распределенный подход к оптимизации запросов в СУБД\newline{}
+V Международная научно-практическая конференция <<Научное творчество XXI века, 2012, Смирнов А.В.}
+
+\section{Ссылки}
+\cvline{Персональная страница}{\url{http://www.artyom-smirnov.info/}}
+\cvline{LinkedIn}{\url{http://www.linkedin.com/in/artyomsmirnov}}
+\cvline{GitHub}{\url{https://github.com/artyom-smirnov}}
+
+\end{document}
